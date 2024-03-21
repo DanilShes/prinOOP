@@ -1,6 +1,6 @@
 package org.example.carService;
 
-public class Car extends MotorTransport {
+public final class Car extends MotorTransport {
 
     private String brand;
 
@@ -32,5 +32,8 @@ public class Car extends MotorTransport {
     public void service() {
         super.service();
         System.out.println("Обсужен автомобиль " + brand + " " + model);
+    }
+    public final void drive() {
+        System.out.println("Автомобиль " + brand + " может передвигаться");
     }
 }
