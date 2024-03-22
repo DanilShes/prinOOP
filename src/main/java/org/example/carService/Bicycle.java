@@ -1,6 +1,6 @@
 package org.example.carService;
 
-public class Bicycle extends WheeledTransport {
+public final class Bicycle extends WheeledTransport {
 
     private String typeOfBike;
 
@@ -21,6 +21,8 @@ public class Bicycle extends WheeledTransport {
     public void service() {
         super.service();
         System.out.println("Обсужено навесное оборудоввание велосипеда типа " + typeOfBike);
-
+    }
+    public final void jump() {
+        System.out.println("Велосипед типа " + typeOfBike + " может совершать прыжки с трамплина");
     }
 }

@@ -1,6 +1,6 @@
 package org.example.carService;
 
-public class Truck extends MotorTransport {
+public final class Truck extends MotorTransport {
 
     private int cargoTruck;
 
@@ -21,5 +21,8 @@ public class Truck extends MotorTransport {
     public void service() {
         super.service();
         System.out.println("Грузоподъемность " + cargoTruck +   " тонн");
+    }
+    public final void loading() {
+        System.out.println("Грузовик с грузоподъемностью " + cargoTruck + " тонн можно загружать");
     }
 }
