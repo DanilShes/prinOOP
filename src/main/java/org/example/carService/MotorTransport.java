@@ -1,6 +1,6 @@
 package org.example.carService;
 
-public class MotorTransport extends WheeledTransport {
+public abstract class MotorTransport extends WheeledTransport {
 
     private String enginesType;
 
@@ -20,6 +20,10 @@ public class MotorTransport extends WheeledTransport {
     @Override
     public void service() {
         super.service();
+        motorService();
+    }
+
+    public void motorService() {
         System.out.println("Обслуживание двигателя типа " + enginesType);
     }
 }
