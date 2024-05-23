@@ -20,9 +20,15 @@ public final class Bicycle extends WheeledTransport {
     @Override
     public void service() {
         super.service();
-        System.out.println("Обсужено навесное оборудоввание велосипеда типа " + typeOfBike);
+        jump();
+        bicycleService();
     }
+
     public final void jump() {
         System.out.println("Велосипед типа " + typeOfBike + " может совершать прыжки с трамплина");
+    }
+
+    public void bicycleService() {
+        System.out.println("Обсужено навесное оборудоввание велосипеда типа " + typeOfBike);
     }
 }

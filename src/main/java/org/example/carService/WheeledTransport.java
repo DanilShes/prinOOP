@@ -1,6 +1,6 @@
 package org.example.carService;
 
-public class WheeledTransport {
+public class WheeledTransport implements Transport {
 
     private int wheelCount;
 
@@ -30,4 +30,5 @@ public class WheeledTransport {
     public void service() {
         System.out.println("Обслужено колес - " + wheelCount);
     }
+
 }

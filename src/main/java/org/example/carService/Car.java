@@ -28,12 +28,19 @@ public final class Car extends MotorTransport {
         this.model = model;
     }
 
+
     @Override
     public void service() {
         super.service();
-        System.out.println("Обсужен автомобиль " + brand + " " + model);
+        drive();
+        carService();
     }
+
     public final void drive() {
         System.out.println("Автомобиль " + brand + " может передвигаться");
+    }
+
+    public void carService() {
+        System.out.println("Обсужен автомобиль " + brand + " " + model);
     }
 }
